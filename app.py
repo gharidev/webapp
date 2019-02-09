@@ -22,6 +22,9 @@ def forgotpassword():
 def signup():
     return render_template("maintenance.html")
 
+@app.route("/contactus")
+def contactus():
+    return render_template("contactus.html")
 
 @app.route("/terms")
 def terms():
@@ -35,5 +38,10 @@ def datapolicy():
 def cookiepolicy():
     return render_template("maintenance.html")
 
+@app.route("/aboutus")
+def aboutus():
+    return render_template("maintenance.html")
+
 if (__name__ == "__main__"):
-    app.run(debug=True)
+    app.debug=True
+    app.run()

@@ -5,19 +5,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Login</title>
 </head>
-<body>
+<body style="background-color:seashell">
+        <header style="background-color:purple;" class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar"><div class="navbar-nav-scroll">
+                <ul class="navbar-nav bd-navbar-nav flex-row">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');"><img src="https://i.ibb.co/tYnNvRX/logo.png" alt="logo" height="50" width="50"></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" style="margin-top:11px;" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/login" style="margin-top:11px;" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Login</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link " href="/signup" style="margin-top:11px;" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Sign Up</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/aboutus" style="margin-top:11px;" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contactus" style="margin-top:11px;" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Expo');">Contact Us</a>
+                  </li>
+                </ul>
+              </div></header>
     <div class="container">
         <div class="row">
             <div class="col-sm-7">
-            <div class="text-center"><a href="/"><img src="https://www.brandcrowd.com/gallery/brands/pictures/picture13704486508059.jpg" alt="HOME"></a></div>
+            <div class="text-center"><a href="/"><img src="https://i.ibb.co/tYnNvRX/logo.png" alt="HOME"></a></div>
+            <br><br><marquee><b><h1>WELCOME TO MYBOOK.</h1></b></marquee>
             </div>
             <div class="col-sm-4">
                 <table>
                     <tr>
-                        <td><font size="2">Email or Phone</font></td>
-                        <td><font size="2">Password</font></td>
+                        <td><font size="2" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Email or Phone</font></td>
+                        <td><font size="2" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Password</font></td>
                     </tr>
                     <tr>
                         <td><input type="text"></td>
@@ -26,14 +49,9 @@
                     </tr>
                     <tr>
                         <td></td>
-                        <td><a href="/forgotpassword"><font size="1">Forgotten Password?</font></a></td>
+                        <td><a href="/forgotpassword"><font size="1" style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Forgotten Password?</font</a></td>
                     </tr>
                 </table>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-7"></div>
-            <div class="col-sm-4">
                 <font size="6"><b>Create an account</b></font><br/>
                 <font size="4">It's Free and always will be.</font><br/>
                 <table>
@@ -53,13 +71,22 @@
                 <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Month</button>
                 <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Year</button></br>
             </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-7"></div>
+            <div class="col-sm-4">
+                
+            </div>
             <div class="col-sm-7"></div>
             <div class="col-sm-3">
                 <font size="1">By clicking Sign Up, you agree to our <a href="/terms">Terms</a>, <a href="datapolicy">Data Policy</a> and <a href="cookiepolicy">Cookie Policy</a>. You may receive SMS notifications from us and can opt out at any time.</font></br></br>
                 <a href="/signup"><button type="button" class="btn btn-success btn-lg">Sign up</button></a>
             </div>
             </div>
+            <footer style="text-align:right;font-size:75%">
+                    Copyright &copy; Haridev
+                </footer>
         </div>
-    </div>
+        </div>
 </body>
 </html>
