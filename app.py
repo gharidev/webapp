@@ -3,16 +3,13 @@ from flask import Flask,render_template
 app=Flask(__name__)
 
 @app.route("/")
+@app.route("/home")
 def index():
     return render_template("index.html")
 
-@app.route("/home")
-def home():
-    return render_template("home.html")
-
 @app.route("/login")
 def login():
-    return render_template("login.html")
+    return render_template("login.html",title='Login')
 
 @app.route("/forgotpassword")
 def forgotpassword():
@@ -24,7 +21,7 @@ def signup():
 
 @app.route("/contactus")
 def contactus():
-    return render_template("contactus.html")
+    return render_template("contactus.html",title='Contact Us')
 
 @app.route("/terms")
 def terms():
@@ -40,7 +37,7 @@ def cookiepolicy():
 
 @app.route("/aboutus")
 def aboutus():
-    return render_template("maintenance.html")
+    return render_template("aboutus.html",title='About Us')
 
 if (__name__ == "__main__"):
     app.debug=True

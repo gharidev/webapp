@@ -1,23 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
-</head>
-<body style="background-color:seashell">
+{% extends "layout.html" %}
+{% block content %}
         <header style="background-color:purple;" class="navbar navbar-expand navbar-dark flex-column flex-md-row bd-navbar"><div class="navbar-nav-scroll">
                 <ul class="navbar-nav bd-navbar-nav flex-row">
                   <li class="nav-item">
-                    <a class="nav-link active" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');"><img src="https://i.ibb.co/tYnNvRX/logo.png" alt="logo" height="50" width="50"></a>
+                    <a class="nav-link" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');"><img src="https://i.ibb.co/tYnNvRX/logo.png" alt="logo" height="50" width="50"></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link active" style="margin-top:11px;" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
+                    <a class="nav-link" style="margin-top:11px;" href="/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/login" style="margin-top:11px;" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Login</a>
+                    <a class="nav-link active" href="/login" style="margin-top:11px;" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">Login</a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link " href="/signup" style="margin-top:11px;" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">Sign Up</a>
@@ -88,5 +80,4 @@
                 </footer>
         </div>
         </div>
-</body>
-</html>
+{% endblock content %}
